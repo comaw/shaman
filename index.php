@@ -20,5 +20,5 @@ else
 include_once (__DIR__ . '/vendor/autoload.php');
 include_once (__DIR__ . '/system/Autoload.php');
 
-$code = new \system\Core();
+(new \system\Core())->run();
 
