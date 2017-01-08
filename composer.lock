@@ -1,0 +1,313 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "e36e29defbab5914ee0ab3c5337a4cd8",
+    "content-hash": "c76c743ebd040a7a4d0537871867fc51",
+    "packages": [
+        {
+            "name": "1of0/better-annotations",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/1of0/better-annotations.git",
+                "reference": "1393b0af68583f8480ac1839f791e45613cc9172"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/1of0/better-annotations/get/1393b0af68583f8480ac1839f791e45613cc9172.zip",
+                "reference": "1393b0af68583f8480ac1839f791e45613cc9172",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "^1.0.0",
+                "doctrine/annotations": "^1.2.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "php-di/php-di": "^5.0.0",
+                "phpunit/phpunit": "^4.8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OneOfZero\\BetterAnnotations\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Wrapper around the doctrine/annotations that tries to be less verbose",
+            "keywords": [
+                "annotations"
+            ],
+            "time": "2016-03-03 14:45:25"
+        },
+        {
+            "name": "1of0/json",
+            "version": "0.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/1of0/json.git",
+                "reference": "c5e6882f480ad7b2da76d6c7cd2f282dac10e897"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/1of0/json/get/c5e6882f480ad7b2da76d6c7cd2f282dac10e897.zip",
+                "reference": "c5e6882f480ad7b2da76d6c7cd2f282dac10e897",
+                "shasum": ""
+            },
+            "require": {
+                "1of0/better-annotations": "^0.1.0",
+                "1of0/phpdoc-reader": "^3.0.0",
+                "container-interop/container-interop": "^1.0.0",
+                "doctrine/annotations": "^1.2.0",
+                "ext-json": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "apigen/apigen": "^4.1.2",
+                "danielstjules/stringy": "^2.0.0",
+                "doctrine/cache": "^1.3.0",
+                "nesbot/carbon": "^1.0.0",
+                "ocramius/proxy-manager": "^1.0.0",
+                "php-di/php-di": "^5.1.0",
+                "phpunit/phpunit": "^4.8.0",
+                "symfony/yaml": "^2.7.0 || ^3.0.0"
+            },
+            "suggest": {
+                "danielstjules/stringy": "Required for PascalCaseContractResolver",
+                "doctrine/cache": "Required for mapper caching",
+                "ext-xml": "Required for XML mapper support",
+                "ocramius/proxy-manager": "Useful for making lazy proxies",
+                "symfony/yaml": "Required for YAML mapper support"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OneOfZero\\Json\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernardo van der Wal",
+                    "email": "composer@thebigb.nl"
+                }
+            ],
+            "description": "Abstraction layer for json_encode() and json_decode(), providing Json.NET-like functionality through annotations or mappings",
+            "homepage": "https://bitbucket.org/1of0/json",
+            "keywords": [
+                "annotations",
+                "json",
+                "json.net",
+                "serialization",
+                "serializer"
+            ],
+            "time": "2016-11-21 12:38:12"
+        },
+        {
+            "name": "1of0/phpdoc-reader",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/1of0/phpdocreader.git",
+                "reference": "b4d4010f6e39b0fb544f3dc128f2db7a2343b2a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/1of0/phpdocreader/get/b4d4010f6e39b0fb544f3dc128f2db7a2343b2a8.zip",
+                "reference": "b4d4010f6e39b0fb544f3dc128f2db7a2343b2a8",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "^1.2.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OneOfZero\\PhpDocReader\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PhpDocReader parses @var and @param values in PHP docblocks (supports namespaced class names with the same resolution rules as PHP)",
+            "keywords": [
+                "phpdoc",
+                "reflection"
+            ],
+            "time": "2016-03-07 17:04:29"
+        },
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "doctrine/annotations",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/annotations.git",
+                "reference": "bd4461328621bde0ae6b1b2675fbc6aca4ceb558"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/bd4461328621bde0ae6b1b2675fbc6aca4ceb558",
+                "reference": "bd4461328621bde0ae6b1b2675fbc6aca4ceb558",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "1.*",
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "doctrine/cache": "1.*",
+                "phpunit/phpunit": "^5.6.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Docblock Annotations Parser",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "parser"
+            ],
+            "time": "2016-12-30 15:59:45"
+        },
+        {
+            "name": "doctrine/lexer",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Lexer\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "lexer",
+                "parser"
+            ],
+            "time": "2014-09-09 13:34:57"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.6.28"
+    },
+    "platform-dev": []
+}

@@ -1,0 +1,41 @@
+{
+  "name": "php-shaman/framework",
+  "description": "php-shaman framework",
+  "keywords": ["php", "framework", "shaman", "project template"],
+  "homepage": "http://php-shaman.pw/",
+  "type": "project",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "support": {
+    "issues": "http://php-shaman.pw/",
+    "forum": "http://php-shaman.pw/",
+    "wiki": "http://php-shaman.pw/",
+    "irc": "http://php-shaman.pw/",
+    "source": "http://php-shaman.pw/"
+  },
+  "authors": [
+    {
+      "name": "php-shaman",
+      "email": "comaw@i.ua"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.28",
+    "1of0/json": "0.3.4"
+  },
+  "require-dev": {
+
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": "php init --env=Development --overwrite=n"
+  }
+}
