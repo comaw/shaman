@@ -17,8 +17,10 @@ else
     ini_set('display_errors', 'Off');
 }
 
-include_once (__DIR__ . '/vendor/autoload.php');
-include_once (__DIR__ . '/system/Autoload.php');
+include_once (__DIR__ . '/../vendor/autoload.php');
+include_once (__DIR__ . '/../system/Autoload.php');
 
-(new \system\Core())->run();
+$config = include_once (__DIR__ . '/../app/config/config.php');
+
+(new \system\Core($config))->run();
 
